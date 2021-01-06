@@ -4,5 +4,20 @@
 	font-family: sans-serif;
 
 }
-
-
+.conteiner-grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 0.2fr 1.4fr 1fr 0.8fr;
+}
+.nav{
+	background-color: #2EFFB3;
+}
+.navbar{
+	background-color: #58F5C3;
+}
+.conteudo-principal{
+	background-color: #4FF9E3;
+}
+.conteudo1, .conteudo2,.conteudo3{
+	background-color: #94FAD5;
+}
