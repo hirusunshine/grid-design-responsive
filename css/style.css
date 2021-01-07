@@ -5,7 +5,6 @@
 
 }
 .conteiner-grid{
-	max-width: 900px;
 	display: grid;
 	height: 55em;
 	grid-template-columns: repeat(4, 1fr);
