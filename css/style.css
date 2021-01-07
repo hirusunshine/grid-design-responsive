@@ -11,9 +11,9 @@
 	grid-template-rows: 0.2fr 1.4fr 1fr 0.8fr;
 	grid-template-areas:
 		"nav nav nav nav"
-		"navbar main main main"
-		"navbar cont1 cont2 cont3"
-		"navbar footer footer footer" 
+		"sidebar main main main"
+		"sidebar cont1 cont2 cont3"
+		"sidebar footer footer footer" 
 	;
 	grid-gap: 0.5em;
 	padding: 0.7em;
@@ -21,18 +21,23 @@
 }
 .conteiner-grid > div{
 	border-radius: 0.2em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-top: 0.4em;
+	color: #1A1A1A;
 }
 .nav{
-	background-color: #2EFFB3;
+	background-color: #4FF9E3 ;
 	grid-area: nav;
 }
-.navbar{
+.sidebar{
 	background-color: #58F5C3;
-	grid-area: navbar;
+	grid-area: sidebar;
 
 }
 .conteudo-principal{
-	background-color: #4FF9E3;
+	background-color:#FABCFC;
 	grid-area: main;
 }
 .conteudo1, .conteudo2,.conteudo3{
@@ -53,4 +58,20 @@
 .footer{
 	background-color: #92F1F9;
 	grid-area: footer;
+}
+
+@media (max-width: 550px){
+	.conteiner-grid{		
+		grid-template-areas:
+			"nav"
+			"sidebar"
+			"main"
+			"cont1" 
+			"cont2" 
+			"cont3"
+			"footer" 
+		;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 0.6fr 1.8fr repeat(3, 1.2fr) 1fr;
+	}
 }
