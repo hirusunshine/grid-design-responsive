@@ -1,4 +1,4 @@
-# proto-design-responsive
+# grid-design-responsive
 
 Nota 1: Objetivo aplicar o grid.
 ######
