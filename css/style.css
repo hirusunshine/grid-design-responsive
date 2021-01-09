@@ -4,7 +4,16 @@
 	font-family: sans-serif;
 
 }
+.conteiner-flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
 .conteiner-grid{
+	max-width: 1024px;
+	width: 100%;
 	display: grid;
 	height: 55em;
 	grid-template-columns: repeat(4, 1fr);
